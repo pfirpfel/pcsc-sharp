@@ -63,6 +63,11 @@ namespace PCSC.Iso7816
         UpdateData = 0xDC,
         /// <summary>Append record</summary>
         [Description("APPEND RECORD")]
-        AppendRecord = 0xE2
+        AppendRecord = 0xE2,
+        /// <summary>Pseudo apdu used for exchanging data with
+        /// non-pcsc-compliant tags and retrieving and setting
+        /// reader parameters</summary>
+        [Description("PSEUDO APDU")]
+        PseudoApdu = 0x00
     }
 }
